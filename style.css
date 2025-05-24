@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top, #dfdfdf, #03414d);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#data-atual {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+#card-info {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 500px;
+    color: #fff;
+}
+
+#card-info img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+#card-info h2 {
+    margin: 10px 0 5px;
+}
+
+#card-info p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Botão excluir dentro da tarefa */
+ul#lista-tarefas li button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+form input {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+}
+
+form button {
+    padding: 15px 25px;
+    background-color: #2d2d2d;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#form-tarefa {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px); /* deixa 16px de cada lado */
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+ul#lista-tarefas {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+ul#lista-tarefas li {
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul#lista-tarefas li input[type="checkbox"] {
+    margin-right: 15px;
+}
+ 
+ul#lista-concluidas {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+ul#lista-concluidas li {
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.5;
+    /* efeito visual de concluído */
+    text-decoration: line-through;
+    /* riscado */
+}

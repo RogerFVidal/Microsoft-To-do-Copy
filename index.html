@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Dia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Meu Dia</h1>
+        <p id="data-atual"></p>
+    </header>
+
+    <main>
+        <div id="card-info">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/planner.png" alt="ícone agenda" />
+            <h2>Foque em seu dia</h2>
+            <p>Realize tarefas com o Meu Dia, uma lista que é atualizada todos os dias.</p>
+        </div>
+        <ul id="lista-tarefas"></ul>
+        
+        <h3 id="titulo-concluidas" style="display: none;">Concluída <span id="contador-concluidas">0</span></h3>
+        <ul id="lista-concluidas"></ul>
+
+        <form id="form-tarefa">
+            <input type="text" id="input-tarefa" autocomplete="off" placeholder="Adicionar uma tarefa..." required />
+            <button type="submit">+</button>
+        </form>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
